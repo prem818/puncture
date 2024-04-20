@@ -1,0 +1,868 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+
+/* ######################################### navbar #################################### */
+
+.navbar{
+  background: #ffde59;
+  height: 74px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+  position: fixed;
+  z-index: 999;
+}
+
+.logo_img{
+  background-image: url("../public/images/logos.JPG");
+  height: 40px;
+  width: 150px;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav_item{
+  display: flex;
+}
+
+.nav_items{
+  direction: none;
+  list-style: none;
+  margin-left: 25px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.nav_items:hover{
+  border-bottom: 2px solid black;
+}
+
+.open{
+  position: absolute;
+  z-index: 99999;
+  font-size: 32px;
+  top: 15px;
+  right: 20px;
+  display: none;
+}
+
+.close{
+  position: absolute;
+  z-index: 9999;
+  font-size: 32px;
+  top: 15px;
+  right: 20px;
+  display: none;
+}
+
+
+/* ################################  section ##################################### */
+
+.section{
+  width: 100%;
+  height: 100vh;
+  z-index: -99;
+  padding: 50px 10%;
+  padding-top: 150px;
+}
+
+.home-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content{
+  padding-top: 100px;
+}
+
+.image{
+  margin-bottom: 50px;
+  z-index: -99;
+}
+
+.h-p{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.h-h1{
+  margin-top: 20px;
+  font-size: 45px;
+}
+
+.typical{
+  font-size: 40px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.h-p1{
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.navlink{
+  text-decoration: none;
+  background: #ffde59;
+  padding: 8px 25px;
+  border-radius: 5px;
+  color: black;
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.navlink:hover{
+  color:#ffde59;
+  background: black;
+}
+
+.image img{
+  animation: anime 1s ease-in-out infinite alternate-reverse;
+}
+
+.nav-links{
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes anime {
+  0%{
+    transform: translateY(-7px);
+  }
+  100%{
+    transform: translateY(7px);
+  }
+}
+
+
+/* ######################################  Services  ##################################3 */
+
+.states h1{
+  padding: 30px 0px;
+}
+
+.states{
+  z-index: -999;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 20px 0px;
+  padding-left: 23px;
+  padding-right: 23px;
+  width: 100%;
+  padding-top: 90px;
+}
+
+.state{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+  grid-gap: 30px;
+}
+
+.card{
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px;
+  cursor: pointer;
+  height: 210px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h1{
+  color: white;
+  font-size: 43px;
+  font-weight: 700;
+}
+
+.states h1{
+  text-align: center;
+}
+
+.card1{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("Pages/Components/img/gujarat.jpeg");
+}
+
+.card2{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("Pages/Components/img/assam.jpeg");
+}
+
+.card3{
+  background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("Pages/Components/img/andra_pardesh.jpg");
+}
+
+
+
+
+
+
+
+/* ################################  Services Page ######################################## */
+
+.services{
+  padding-top: 130px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+  grid-gap: 30px;
+  column-count: 4;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.Scard1{
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  box-shadow: 0px 0pc 5px 0px;
+}
+
+
+.Scard3{
+  height: 100px;
+  padding: 30px;
+  box-shadow: 0px 0pc 2px 0px;
+}
+
+.Scard4{
+  height: 100px;
+  padding: 30px;
+  box-shadow: 0px 0pc 2px 0px;
+}
+
+.Scard5{
+  height: 100px;
+  padding: 30px;
+  box-shadow: 0px 0pc 2px 0px;
+}
+
+.Scard6{
+  height: 100px;
+  padding: 30px;
+  box-shadow: 0px 0pc 2px 0px;
+}
+
+.Scard7{
+  height: 100px;
+  padding: 30px;
+  box-shadow: 0px 0pc 2px 0px;
+}
+
+.Scard8{
+  height: 100px;
+  padding: 30px;
+  box-shadow: 0px 0pc 2px 0px;
+}
+
+.Sicon{
+  width: 80px;
+  height: 80px;
+}
+
+.Sserive-name{
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.Snavlink{
+  text-decoration: none;
+}
+
+
+/* ############################  Puncture ##################################### */
+
+.Pcontainer{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  flex-direction: column;
+}
+
+.Ph1{
+ padding-bottom: 10px;
+}
+
+.Pcontainers{
+  width: 500px;
+  height: 80%;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+.Pcontainer2{
+  width: 100%;
+  height: 100%;
+  background: #ffde59;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.Ph2{
+  padding-top: 20px;
+}
+
+.Pselect{
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.Pimage{
+  margin-top: 20px;
+  width: 70%;
+  height: 60%;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid black;
+}
+
+.Ph3{
+  padding-top: 20px;
+}
+
+.Ph33{
+  padding-top: 40px;
+}
+
+.Pprice{
+  padding-top: 10px;
+}
+
+.puncture{
+  margin-top: 50px;
+  padding: 7px 20px;
+  font-size: 16px;
+  background: black;
+  color: #ffde59;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.puncture:hover{
+  padding: 8px 22px;
+}
+
+.Pmobile{
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 3px;
+  margin-top: 20px;
+  padding: 5px 15px;
+  font-size: 16px;
+}
+
+
+
+/* ******************************* Review *************************************** */
+
+.review{
+  width: 100%;
+  padding: 0px 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.review h1{
+  padding-bottom: 10px;
+}
+
+.review-name{
+  padding: 7px 5px;
+  font-size: 16px;
+  width: 400px;
+}
+
+.review-feedback{
+  height: 120px;
+  width: 900px;
+}
+
+.review button{
+  margin-top: 10px;
+  background: #ffde59;
+  padding: 8px 25px;
+  border-radius: 5px;
+  color: black;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+
+.review h3{
+  padding-top: 50px;
+  display: inline-block;
+  padding-right: 30px;
+  padding-bottom: 3px;
+}
+
+.Rp{
+  display :inline-block;
+}
+
+/* /################################# Loder ################################### */
+
+.loder{
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  background: black;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pload{
+  color: white;
+  padding-top: 10px;
+  font-size: 22px;
+}
+
+/* ################################## About ########################################### */
+
+.about{
+  padding-bottom: 50px;
+}
+
+.adiv{
+  text-align: center;
+}
+
+.ah1{
+  font-size: 40px;
+  padding: 30px 6%;
+  padding-top: 120px;
+}
+
+.a_information{
+  background: #fdde63;
+  padding: 20px 10%;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.a-ourteam{
+  text-align: center;
+}
+
+.a-ourteams{
+  font-size: 40px;
+  padding-top: 60px;
+}
+
+.grid-ourteam{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+  grid-gap: 30px;
+  column-count: 3;
+  padding: 0px 10%;
+  padding-top: 30px;
+}
+
+.member1{
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.member1 h2{
+  padding-top: 10px;
+  font-size: 30px;
+}
+
+.member1 .a-description{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.avatar {
+  width: 100px; /* Set the width and height of the avatar */
+  height: 100px;
+  border-radius: 50%; /* Make it circular by setting border-radius to 50% */
+  overflow: hidden; /* Hide the parts of the image that go beyond the circle */
+  border: 2px solid #ccc; /* Add a border for styling */
+}
+
+/* Style for the avatar image */
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
+}
+
+
+.a-role{
+  font-size: 17px;
+}
+
+.a-whyChoose{
+  margin-top: 70px;
+  background: rgb(28, 27, 27);
+  width: 100%;
+  height: 500px;
+  padding: 30px 10%;
+}
+
+.a-why-divide{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.a-why-image{
+  width: 58%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-why-content{
+  width: 40%;
+  height: 100%;
+  padding: 50px 0px;
+}
+
+.a-why-content h1{
+  color:#ffde59;
+  font-size: 40px;
+  border-bottom: 5px solid white;
+  margin-bottom: 25px;
+}
+
+.a-why-image img{
+  width: 100%;
+}
+
+.a-why-point{
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.a-why-point p{
+  font-size: 20px;
+  color: white;
+  padding-left: 10px;
+}
+
+.a-count{
+  margin-top: 80px;
+  background: #f0f2f2;
+  height: 250px;
+  width: 100%;
+  padding: 20px 10%;
+}
+
+.a-continer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.a-container-count{
+  height: 100%;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.a-container-count img{
+  width: 60%;
+}
+
+.a-container-count p{
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: -25px;
+}
+
+.a-container-count h1{
+  padding-top: 8px;
+}
+
+.a-container-count .a-repair{
+  width: 50%;
+}
+
+
+
+
+@media(max-width: 560px) {
+  
+  .navbar{
+    z-index: 999;
+  }
+  
+  .open{
+    display: inline-block; 
+  }
+
+  .nav_item{
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 3px 0px;
+    display: none;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(200%);
+  }
+
+  .active .nav_item{
+    transition: 1s;
+    position: absolute;
+    width: 250px;
+    height: 100vh;
+    box-shadow: 0px 0px 3px 0px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateX(0px);
+  }
+
+  .active .open{
+    display: none;
+  }
+  
+  .active .close{
+    display: inline-block;
+  }
+
+  .nav_items{
+    margin-bottom: 20px;
+  }
+
+  /* ##############################  section  ################################### */
+
+  .home-content{
+    flex-direction: column;
+  }
+
+  .content{
+    text-align: center;
+    padding-bottom: 40px;
+    order: 2;
+    padding-top: 20px;
+  }
+
+  .section{
+    padding-top: 20px;
+    padding: 50px 8%;
+  }
+
+  .image{
+    text-align: center;
+    padding-top: 100px;
+    order: 1;
+  }
+
+  .image img{
+    width: 300px;
+  }
+
+  .services{
+    padding-top: 130px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    grid-gap: 20px;
+    column-count: 4;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+
+  .Scard1{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0px 0pc 5px 0px;
+    text-align: center;
+  }
+
+/* ################################ puncture ################################# */
+
+.Pcontainers{
+  width: 90%;
+  box-shadow: 0px 0px 4px 0px;
+}
+
+.Pcontainer{
+  height: auto;
+  padding-bottom: 25px;
+}
+
+
+.Pimage{
+  width: 50%;
+  height: 130px;
+}
+
+.Pcontainer2{
+  width: 100%;
+  height: 100%;
+  background: #ffde59;
+}
+
+.Ph3{
+  margin-bottom: 20px;
+}
+
+.puncture{
+  margin-bottom: 20px;
+}
+
+.Ph1{
+  padding-top: 30px;
+}
+
+
+
+/* ******************************* Review *************************************** */
+
+.review{
+  width: 100%;
+  padding: 0px 5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.review h1{
+  padding-bottom: 10px;
+}
+
+.review-name{
+  padding: 7px 5px;
+  font-size: 16px;
+  width: 60%;
+}
+
+.review-feedback{
+  height: 100px;
+  width: 90%;
+}
+
+.review button{
+  margin-top: 10px;
+  background: #ffde59;
+  padding: 8px 25px;
+  border-radius: 5px;
+  color: black;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+
+/* ############################### About ########################################## */
+
+.a-why-divide{
+  flex-direction: column;
+}
+
+.a-why-image{
+  width: 100%;
+}
+
+.a-why-content{
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.a-why-content h1{
+  font-size: 30px;
+}
+
+.a-whyChoose{
+  height: 600px;
+}
+
+.a-continer{
+  flex-direction: column;
+  height: 800px;
+}
+
+.a-container-count{
+  margin-top: 40px;
+}
+
+.a-count{
+  height: 900px;
+}
+
+.a-continer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-container-count .p-a{
+  padding-top: 10px;
+}
+
+
+
+
+}
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');;
+
+
+*,
+*::after,
+*::before{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Nunito', sans-serif;
+} */
+
+
+/* ############################### cities @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@?? */
+/* .cities h1{
+    padding: 30px 0px;
+}
+
+.cities{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 20px 0px;
+    padding-left: 23px;
+    padding-right: 23px;
+    width: 100%;
+    padding-top: 100px;
+    z-index: -99;
+}
+
+.city{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
+    grid-gap: 30px;
+}
+
+.ccard{
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 0px;
+    cursor: pointer;
+    height: 210px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ccard h1{
+    color: white;
+    font-size: 43px;
+    font-weight: 700;
+}
+
+.cities h1{
+    text-align: center;
+}
+
+.ccard1{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("https://images.thequint.com/thequint/2019-08/35b809a4-fe83-44e2-96bd-6c638fa97275/Anand.jpg?auto=format%2Ccompress&fmt=webp");
+}
+
+.ccard2{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("https://th.bing.com/th/id/R.43de9ebb75b8452431714c68ebf9c78d?rik=JqGjWbsssstN0g&riu=http%3a%2f%2fmetricpioneer.com%2fwp-content%2fuploads%2f2015%2f07%2fBaroda-Ahmedabad-Expressway.jpg&ehk=S8eik%2f2eGmHOOBlKzjO1OPGdcnnldZiO0MsvlxhdETA%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.ccard3{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("https://images.fineartamerica.com/images-medium-large-5/85-kilometers-to-bhavnagar-milestone-kantilal-patel.jpg");
+}
+
+.ccard4{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("https://th.bing.com/th/id/R.c91a1bb1393c0eb0f7c78505e809365e?rik=sglTNKLJxNB6kw&riu=http%3a%2f%2fim.hunt.in%2fcg%2fgandhinagar%2fCity-Guide%2fgandhinagar.jpg&ehk=VghTDzxR8j5ReheS9IEa2mDwDkPGhfumlnq%2fb9HOjrk%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.ccard5{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("https://th.bing.com/th/id/R.1e24703a38dd2e0a2ba818f429e7643d?rik=yt%2fBA%2bNvwJ55gw&riu=http%3a%2f%2fwww.nsrtc.com%2fimages%2fjoin%2fgandhidham.jpg&ehk=wOu%2b0aE755J%2bU%2fQhQiL10xcI1En5vQ8RmU6Fsc4scr4%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.ccard6{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("https://th.bing.com/th/id/R.ff6295b1e2ba507e5d7d546f8c1a5d46?rik=NUUHgRXd6%2f9Ivw&riu=http%3a%2f%2f4.bp.blogspot.com%2f-0UPhA_TnfBc%2fT1_1mi6mqzI%2fAAAAAAAAEA8%2fULzrMk_F1PM%2fs1600%2frakjotjamnagar.jpg&ehk=l6JCE0rJGqiTlfd68he4C6iE9pu27zuAAqFlFooiH%2bs%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.ccard7{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("https://media-cdn.tripadvisor.com/media/photo-s/11/37/68/1b/estrada-vicinal-que-parte.jpg");
+}
+
+.ccard8{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("https://th.bing.com/th/id/R.bd03056ccd4d76b57f763d57a457fb51?rik=aKdaKx%2bQp862SA&riu=http%3a%2f%2fim.hunt.in%2fcg%2fRajkot%2fCity-Guide%2fhighwayNH.jpg&ehk=aVxbuhHHgq%2b9NMNdxnc3r6ouLbkL7FbuXwbperltWWI%3d&risl=&pid=ImgRaw&r=0");
+}
+
+.ccard9{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("https://www.deshgujarat.com/wp-content/uploads/2017/05/Highway.jpg");
+}
+
+.ccard10{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)) ,url("https://gumlet.assettype.com/swarajya%2F2017-09%2Fa3a1f5ad-8738-4627-9b47-40f3ab120d1c%2Fnhai.jpg?w=640&q=75&auto=format%2Ccompress");
+}
+
+.nav{
+    text-decoration: none;
+}
+@media (max-width: 540px) {
+    .logoimage{
+        width: 80%;
+    }
+    
+} 
+
+input{
+    outline: none;
+    padding: 3px 5px;
+    font-size: 16px;
+} */
